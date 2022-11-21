@@ -37,6 +37,6 @@ if (age < 18) {
 
 
 
-document.getElementById ('cost').innerHTML = ticketCost;
+document.getElementById ('cost').innerHTML ='Il prezzo del tuo biglietto è di:'+  ticketCost.toFixed (2) + '&euro;';
 
 
