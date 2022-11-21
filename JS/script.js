@@ -6,9 +6,9 @@
 // L'output del prezzo finale va emesso (presentato all'utente) in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 
 
-const km = prompt ('quanti km vuoi percorrere?');
+const km = prompt ('Quanti km vuoi percorrere?');
 
-const age = prompt ('quanti anni hai?');
+const age = prompt ('Quanti anni hai?');
 
 let howManyKm = (0.21 * km);
 
@@ -16,18 +16,18 @@ let minors = (age < 18);
 
 let discountMinors = ((howManyKm / 100) * 20);
 
-let senior = (age > 65)
+let senior = (age > 65);
 
-let discountMayors = ((howManyKm / 100) * 40)
+let discountMayors = ((howManyKm / 100) * 40);
 
-let ticketCost
+let ticketCost;
 
 console.log (km, age, howManyKm, minors, senior, discountMinors, discountMayors );
 
-if (age < 18) {
+if (age <= 18) {
    ticketCost = (howManyKm - discountMinors);
 
-} else if (age > 65) {
+} else if (age >= 65) {
     ticketCost = (howManyKm - discountMayors);
 
 } else {
